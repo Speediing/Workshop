@@ -6,20 +6,6 @@ domain to look and feel like a single application.
 The first application is the "host application". All requests go to this application
 first, and then the request is rewritten to proceed to the "child application".
 
-## Getting started
-
-```sh
-vc link --scope uncurated-tests --project multi-base-path-multizone-host-app --yes
-vc env pull apps/host-app/.env.local
-```
-
-and then run both `host-app` and `child-app` simultaneously.
-
-```sh
-pnpm host-app
-pnpm child-app
-```
-
 ## `basePath`
 
 Next.js only allows one `basePath` on an application. `basePath` allows Next.js to
