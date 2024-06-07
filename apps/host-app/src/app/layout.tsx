@@ -11,7 +11,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="p-2">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <Header name="Host Application" />
           {children}
           <Analytics />
